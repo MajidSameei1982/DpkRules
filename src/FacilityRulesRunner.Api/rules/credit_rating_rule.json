@@ -1,0 +1,19 @@
+{
+  "ruleId": "CreditRatingRequired",
+  "description": "درخواست‌های بالای ۱۰۰۰ میلیارد ریال نیاز به رتبه‌بندی دارند",
+  "conditions": [
+    {
+      "field": "RequestedAmount",
+      "operator": "GreaterThan",
+      "value": 100000000000
+    }
+  ],
+  "requirements": [
+    "CreditRatingFile",
+    "RatingAgency",
+    "Score",
+    "Grade",
+    "IssueDate",
+    "ExpiryDate"
+  ]
+}
