@@ -1,0 +1,9 @@
+{
+  "ruleId": "LetterOfCreditValidation",
+  "description": "اعتبار اسنادی باید دارای شماره 16 رقمی و تاریخ سررسید معتبر باشد",
+  "conditions": [
+    { "field": "LetterNumberLength", "operator": "Equals", "value": 16 },
+    { "field": "DueDate", "operator": "GreaterThan", "value": "2025-10-31" }
+  ],
+  "requirements": ["LetterNumber", "DueDate", "PaymentAmount"]
+}

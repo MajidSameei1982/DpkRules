@@ -1,0 +1,12 @@
+{
+  "ruleId": "CollateralCoverage",
+  "description": "وثیقه باید حداقل 120% مبلغ درخواست را پوشش دهد",
+  "conditions": [
+    {
+      "field": "CollateralCoveragePercent",
+      "operator": "GreaterThan",
+      "value": 120
+    }
+  ],
+  "requirements": ["CollateralType", "CollateralValue"]
+}

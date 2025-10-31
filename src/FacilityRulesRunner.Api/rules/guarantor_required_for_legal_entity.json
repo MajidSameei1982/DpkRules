@@ -1,0 +1,9 @@
+{
+  "ruleId": "GuarantorRequiredForLegalEntity",
+  "description": "برای اشخاص حقوقی با مبلغ بالای 500 میلیارد ریال ضامن الزامی است",
+  "conditions": [
+    { "field": "CustomerType", "operator": "Equals", "value": "Legal" },
+    { "field": "RequestedAmount", "operator": "GreaterThan", "value": 50000000000 }
+  ],
+  "requirements": ["GuarantorCount", "GuarantorType"]
+}

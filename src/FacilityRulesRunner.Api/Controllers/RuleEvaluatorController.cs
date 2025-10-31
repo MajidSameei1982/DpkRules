@@ -37,4 +37,34 @@ public class RuleEvaluatorController : ControllerBase
             Console.WriteLine("نیاز به رتبه‌بندی نیست.");
         }
     }
+
+    [HttpGet]
+    public void Test2()
+    {
+        var evaluator = new JsonRuleEvaluator();
+        // var rule = LoadRuleFromJson("rules/collateral_rule.json");
+        var rule = System.IO.File.ReadAllText("rules/collateral_rule.json");
+        var request = new LoanRequest
+        {
+            Fields = new Dictionary<string, object>
+            {
+                { "CollateralCoveragePercent", 130 },
+                { "RequestedAmount", 60000000000 },
+                { "CustomerType", "Legal" },
+                { "LetterNumberLength", 16 },
+                { "DueDate", DateTime.Today.AddDays(10) }
+            }
+        };
+
+        // if (evaluator.IsApplicable(request, rule))
+        // {
+        //     var requiredFields = evaluator.GetRequiredFields(rule);
+        //     Console.WriteLine($"قانون {rule.RuleId} اعمال شد. فیلدهای مورد نیاز:");
+        //     requiredFields.ForEach(Console.WriteLine);
+        // }
+        // else
+        // {
+        //     Console.WriteLine($"قانون {rule.RuleId} اعمال نشد.");
+        // }
+    }
 }

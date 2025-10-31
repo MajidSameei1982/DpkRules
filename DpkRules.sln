@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacilityRulesRunner.Api", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacilityRulesRunner.Rules", "src\FacilityRulesRunner.Rules\FacilityRulesRunner.Rules.csproj", "{8B2E58C7-5A8B-4823-9DDE-D6755DD2A3A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleTests", "tests\RuleTests\RuleTests.csproj", "{7FDFD82B-85AA-472D-869A-0CCF5D494E21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,6 +18,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DF5CCF26-428A-418F-B46C-87D96F113B87} = {8D71A471-FDBF-4907-8636-454ABD552EEA}
 		{8B2E58C7-5A8B-4823-9DDE-D6755DD2A3A2} = {8D71A471-FDBF-4907-8636-454ABD552EEA}
+		{7FDFD82B-85AA-472D-869A-0CCF5D494E21} = {867DBFD6-F66B-42BD-B8A1-25BC9C22A987}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DF5CCF26-428A-418F-B46C-87D96F113B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -26,5 +29,9 @@ Global
 		{8B2E58C7-5A8B-4823-9DDE-D6755DD2A3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B2E58C7-5A8B-4823-9DDE-D6755DD2A3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B2E58C7-5A8B-4823-9DDE-D6755DD2A3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FDFD82B-85AA-472D-869A-0CCF5D494E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FDFD82B-85AA-472D-869A-0CCF5D494E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FDFD82B-85AA-472D-869A-0CCF5D494E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FDFD82B-85AA-472D-869A-0CCF5D494E21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
