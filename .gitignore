@@ -1,0 +1,52 @@
+# .NET Core & .NET 9 Ignore Rules
+
+## Build & Output Directories
+bin/
+obj/
+out/
+
+## User-specific Files
+.vs/
+*.suo
+*.user
+*.rsuser
+*.vspcc
+*.psess
+
+## Logs & Debugging
+*.log
+*.tlog
+*.pdb
+
+## NuGet & Package Dependencies
+*.nupkg
+packages/
+.nuget/
+project.lock.json
+paket-files/
+
+## Temporary Files
+*~ 
+*.bak
+*.swp
+*.swn
+Thumbs.db
+
+## Rider & Visual Studio Code Settings
+.idea/
+.vscode/
+launchSettings.json
+
+## Docker & Kubernetes
+docker-compose.override.yml
+.env
+
+## Secrets & Environment Files
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+## Other Ignored Files
+Coverage/
+TestResults/
+ServiceFabricBackup/
