@@ -1,24 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8D71A471-FDBF-4907-8636-454ABD552EEA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{867DBFD6-F66B-42BD-B8A1-25BC9C22A987}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacilityRulesRunner.Api", "src\FacilityRulesRunner.Api\FacilityRulesRunner.Api.csproj", "{DF5CCF26-428A-418F-B46C-87D96F113B87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacilityRulesRunner.Api", "src\FacilityRulesRunner.Api\FacilityRulesRunner.Api.csproj", "{DF5CCF26-428A-418F-B46C-87D96F113B87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacilityRulesRunner.Rules", "src\FacilityRulesRunner.Rules\FacilityRulesRunner.Rules.csproj", "{8B2E58C7-5A8B-4823-9DDE-D6755DD2A3A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacilityRulesRunner.Rules", "src\FacilityRulesRunner.Rules\FacilityRulesRunner.Rules.csproj", "{8B2E58C7-5A8B-4823-9DDE-D6755DD2A3A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleTests", "tests\RuleTests\RuleTests.csproj", "{7FDFD82B-85AA-472D-869A-0CCF5D494E21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuleTests", "tests\RuleTests\RuleTests.csproj", "{7FDFD82B-85AA-472D-869A-0CCF5D494E21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC50EA31-8F82-4687-B4BD-2177A7748590}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{DF5CCF26-428A-418F-B46C-87D96F113B87} = {8D71A471-FDBF-4907-8636-454ABD552EEA}
-		{8B2E58C7-5A8B-4823-9DDE-D6755DD2A3A2} = {8D71A471-FDBF-4907-8636-454ABD552EEA}
-		{7FDFD82B-85AA-472D-869A-0CCF5D494E21} = {867DBFD6-F66B-42BD-B8A1-25BC9C22A987}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DF5CCF26-428A-418F-B46C-87D96F113B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -33,5 +36,16 @@ Global
 		{7FDFD82B-85AA-472D-869A-0CCF5D494E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FDFD82B-85AA-472D-869A-0CCF5D494E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FDFD82B-85AA-472D-869A-0CCF5D494E21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF5CCF26-428A-418F-B46C-87D96F113B87} = {8D71A471-FDBF-4907-8636-454ABD552EEA}
+		{8B2E58C7-5A8B-4823-9DDE-D6755DD2A3A2} = {8D71A471-FDBF-4907-8636-454ABD552EEA}
+		{7FDFD82B-85AA-472D-869A-0CCF5D494E21} = {867DBFD6-F66B-42BD-B8A1-25BC9C22A987}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3BB266F-1EE3-4BA0-BB93-33340995BE49}
 	EndGlobalSection
 EndGlobal
