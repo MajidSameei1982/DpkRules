@@ -9,8 +9,8 @@ namespace FacilityRulesRunner.Api.Controllers;
 [Route("[controller]")]
 public class RuleEvaluatorController : ControllerBase
 {
-    [HttpGet]
-    public void Test()
+    [HttpGet("Test")]
+    public void Rank()
     {
         var request = new LoanRequest
         {
@@ -21,8 +21,32 @@ public class RuleEvaluatorController : ControllerBase
             }
         };
 
-        var ruleJson = System.IO.File.ReadAllText("rules/credit_rating_rule.json");
-        var rule = JsonSerializer.Deserialize<RuleDefinition>(ruleJson);
+        //Fetch from db
+        //var ruleJson = System.IO.File.ReadAllText("rules/credit_rating_rule.json");
+        //var rule = JsonSerializer.Deserialize<RuleDefinition>(ruleJson);
+
+        //Init
+        var rule = new RuleDefinition();
+
+        rule.Requirements = new List<string>
+        {
+            "CreditRatingFile",
+            "RatingAgency",
+            "Score",
+            "Grade",
+            "IssueDate",
+            "ExpiryDate"
+        };
+
+        rule.Conditions = new List<RuleCondition> 
+        { 
+            new RuleCondition
+            {
+                Field = "RequestedAmount",
+                Operator = "GreaterThan",
+                Value = 100000000000
+            }
+        };
 
         var evaluator = new JsonRuleEvaluator();
 
@@ -38,7 +62,7 @@ public class RuleEvaluatorController : ControllerBase
         }
     }
 
-    [HttpGet]
+    [HttpGet("Test2")]
     public void Test2()
     {
         var evaluator = new JsonRuleEvaluator();
