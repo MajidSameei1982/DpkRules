@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacilityRulesRunner.EntityRules", "src\FacilityRulesRunner.EntityRules\FacilityRulesRunner.EntityRules.csproj", "{AEAD6332-744D-411F-8ED7-12C7CBA4650E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{7FDFD82B-85AA-472D-869A-0CCF5D494E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FDFD82B-85AA-472D-869A-0CCF5D494E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FDFD82B-85AA-472D-869A-0CCF5D494E21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEAD6332-744D-411F-8ED7-12C7CBA4650E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEAD6332-744D-411F-8ED7-12C7CBA4650E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEAD6332-744D-411F-8ED7-12C7CBA4650E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEAD6332-744D-411F-8ED7-12C7CBA4650E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{DF5CCF26-428A-418F-B46C-87D96F113B87} = {8D71A471-FDBF-4907-8636-454ABD552EEA}
 		{8B2E58C7-5A8B-4823-9DDE-D6755DD2A3A2} = {8D71A471-FDBF-4907-8636-454ABD552EEA}
 		{7FDFD82B-85AA-472D-869A-0CCF5D494E21} = {867DBFD6-F66B-42BD-B8A1-25BC9C22A987}
+		{AEAD6332-744D-411F-8ED7-12C7CBA4650E} = {8D71A471-FDBF-4907-8636-454ABD552EEA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F3BB266F-1EE3-4BA0-BB93-33340995BE49}

@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\FacilityRulesRunner.EntityRules\FacilityRulesRunner.EntityRules.csproj" />
+    </ItemGroup>
+
 </Project>

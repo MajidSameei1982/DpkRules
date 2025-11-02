@@ -1,9 +1,10 @@
+using FacilityRulesRunner.EntityRules.Entities;
 using FacilityRulesRunner.Rules.RuleModels;
 
 namespace FacilityRulesRunner.Rules.Contracts;
 
 public interface IRuleEvaluator
 {
-    bool IsApplicable(LoanRequest request, RuleDefinition rule);
+    bool IsApplicable(LoanContract request, ContractRule rule);
     List<string> GetRequiredFields(RuleDefinition rule);
 }
